@@ -1,0 +1,11 @@
+li {
+    list-style-type: none;
+    border-left: 3px #000 solid;
+    padding-left: 10px;
+}
+
+input {
+    writing-mode: vertical-lr;
+    border: 1px solid blue;
+    border-block-width: 5px;
+  }
