@@ -1,11 +1,78 @@
+@import url(//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css);
+
+@font-face {
+	font-family: "AlternateGothicATF"; 
+    src: url("../_fonts/AlternateGothicATF.otf");
+}
+
+*{
+	font-family: "AlternateGothicATF";
+	font-size: 18px;
+	letter-spacing: 3px;
+	word-spacing: 5px;
+    color: #6c6de3;
+}
+
+
+#sidebar-cards-archive ul li {
+    list-style: none;
+}
+
+ul li:before {
+    height: 15px;
+    width: 7px;
+    border-bottom: 2px solid;
+    content: "";
+    display: inline-block;
+    top: -0.3em;
+    margin-bottom: 5px;
+    color: #000;
+}
+
+/*** custom checkboxes ***/
+input[type=checkbox] {
+    position: relative;
+}
+/* to hide the checkbox itself */
+
+.check::before {
+    position: absolute;
+    background-color: #FFFFFF;
+    height: 100%;
+    width: 100%;
+    font-family: FontAwesome;
+    display: inline-block;
+    content: "\f146";
+    letter-spacing: 10px;
+    
+}
+/* space between checkbox and label */
+
+.check:checked::before {
+    font-family: FontAwesome;
+    display: inline-block;
+    content: "\f146";
+    letter-spacing: 5px;
+}
+
+/* allow space for check mark */
+
 li {
     list-style-type: none;
-    border-left: 3px #000 solid;
+    border-left: 2px #000 solid;
+    background-color: #fff;
     padding-left: 10px;
 }
 
-input {
-    writing-mode: vertical-lr;
-    border: 1px solid blue;
-    border-block-width: 5px;
-  }
+li:hover{
+    background-color: #6c6de3;
+    color: #fff;
+}
+
+.lbl{
+    /* display: flex; */
+    gap: 5px;
+    cursor: pointer;
+    user-select: none;
+    color: inherit;
+}
